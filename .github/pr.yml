@@ -12,7 +12,7 @@ jobs:
       - name: Add Comment
         uses: PublicisSapient/devops-chatgpt-comment-pull-request@main
         with:
-          github-token: ${{ secrets.GITHUB_TOKEN }}
+          github-token: ${{ secrets.TOKEN }}
           open-api-key: ${{ secrets.CHATGPT_API_KEY }}
           max-prompt-tokens: '10000'
           ignore-paths: '.github/*, package*.json, .env*'
