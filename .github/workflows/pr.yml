@@ -22,5 +22,4 @@ jobs:
           top_p: 1
           frequency-penalty: 0
           presence-penalty: 1
-          custom-prompt: Review the changes to ensure readability and adherence to Golang best practices. Additionally, check if error handling is robust and if there are any potential security vulnerabilities introduced. Consider these for reviewing the PR
-          Avoid naked return statements, naming conventions(camel case preferred), line length should be less than 30
+          custom-prompt: Review the changes to ensure readability and adherence to Golang best practices. Additionally, check if error handling is robust and if there are any potential security vulnerabilities introduced. Consider these for reviewing the PR - Avoid naked return statements, naming conventions(camel case preferred), line length should be less than 30
