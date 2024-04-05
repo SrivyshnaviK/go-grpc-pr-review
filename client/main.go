@@ -17,6 +17,7 @@ func main() {
 	if err != nil {
 		log.Fatalf("Did not connect: %v", err)
 	}
+	sayHelloafterclinetconnected()
 	defer conn.Close()
 
 	client := pb.NewGreetServiceClient(conn);
