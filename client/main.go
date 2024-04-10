@@ -16,7 +16,7 @@ func main() {
 	conn, err := grpc.Dial("localhost"+port, grpc.WithTransportCredentials(insecure.NewCredentials()))
 	if err != nil {
 		log.Fatalf("Did not connect: %v", err)
-		log.Fatal("Unable to connect to localhost")
+		log.Fatal("Unable to connect to localhost", err)
 	}
 	defer conn.Close()
 
