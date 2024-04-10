@@ -15,7 +15,7 @@ const (
 func main() {
 	conn, err := grpc.Dial("localhost"+port, grpc.WithTransportCredentials(insecure.NewCredentials()))
 	if err != nil {
-		log.Fatalf("Did not connect: %v", err)
+		log.Fatalf("Did not connect to the client: %v", err)
 	}
 	defer conn.Close()
 
